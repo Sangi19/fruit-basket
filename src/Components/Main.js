@@ -2,18 +2,15 @@ import React from 'react';
 import Product from './Product';
 
 export default function Main (props) {
-    const {products} = props;
+    const {products, onAdd} = props;
     return (
-        <main className="block col-1">
-            <h2> Items</h2>
-            <div className="row">
+            <div className="row block col-1">
                 
                 {products ? products.map(product => (
-                    <Product key={product.id} product={product} ></Product>       
+                    <Product key={product.id} product={product} onAdd={onAdd}></Product>       
 
                 )) : "no task"
                 }
-                </div>
-        </main>
+             </div>
     );
 }

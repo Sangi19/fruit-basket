@@ -1,13 +1,15 @@
 import React from 'react'
 
 export default function Product(props) {
-    const {product} = props;
-    return (
+    const {product, onAdd} = props;
+    return ( 
         <div>
             <h3>{product.name}</h3>
-            <div>{product.price}</div>
+            <h3>INR.{product.price}</h3>
             <div>
-                <button >Add to basket</button>
+                <h3>
+                <button onClick={onAdd}>Add</button>
+                </h3>
             </div>
 
         </div>
