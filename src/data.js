@@ -6,15 +6,16 @@ const data={
         price: 200,
     },
     {
-        id: '2',
-        name: 'Orange',
-        price: 100,
-    },
-    {
         id: '3',
         name: 'Banana',
         price: 20,
     },
+    {
+        id: '2',
+        name: 'Orange',
+        price: 100,
+    },
+
 ]}
 
 export default data;
