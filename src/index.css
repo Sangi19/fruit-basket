@@ -1,7 +1,15 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: violet;
+* body{
+  box-sizing: border-box;
+  border-color: khaki;
+  width: 40%;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  position: absolute; /* or absolute */
+  top: 20px;
+  left: 30%;
+  right: 50%;
 }
+
 h1,
 h2,
 h3 {
@@ -22,10 +30,14 @@ a {
 .row {
   display: flex;
   justify-content: space-between;
-  font-size: xx-large;
+
 }
 .row.center {
   align-items: center;
+}
+.col {
+  align-items:initial;
+
 }
 .col-1 {
   flex: 1;
@@ -59,13 +71,13 @@ button {
   width: 100%;
   cursor: pointer;
 }
-button.add {
+btn.add {
   background-color: #40c0f0;
-  width: 1.5rem;
+  width: 2rem;
 }
-button.remove {
+btn.remove {
   background-color: #f04040;
-  width: 1.5rem;
+  width: 2rem;
 }
 button.badge {
   background-color: #f04040;

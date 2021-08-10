@@ -8,7 +8,7 @@ export default function Product(props) {
             <h3>INR.{product.price}</h3>
             <div>
                 <h3>
-                <button onClick={onAdd}>Add</button>
+                <button onClick={() => onAdd(product)}>Add</button>
                 </h3>
             </div>
 
