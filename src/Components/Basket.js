@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Basket (props) {
     const {cartItems, onAdd, onRemove} = props;
-    const totalPrice =cartItems.reduce((a,c) => a + c.price * c.qty , 0);
+    let [value, setValue] = useState('');
+    const itemsPrice =cartItems.reduce((a,c) => a + c.price * c.qty , 0);
+
+    let onChangeHandler = (e) => {
+        setValue(e.target.value);
+      };
+
+    const num= value/100;
+    const num1=itemsPrice*num;
+    const discountTotal= itemsPrice-num1;
+ 
+    const totalPrice=discountTotal
+        
+    const saved= itemsPrice-totalPrice;
 
     return (
         <div className="block col-1">
@@ -41,10 +54,27 @@ export default function Basket (props) {
             <>
                 <hr></hr>
                 <div className="row">
-                <div className="col-2">Items Price</div>
-                <div className="col-1 text-right">INR {totalPrice.toFixed(2)}</div>
+                    <div className="col-2">Items Price</div>
+                    <div className="col-1 text-right">INR {itemsPrice.toFixed(2)}</div>
                 </div>
-           
+
+                <div className="row ">
+                        <div className="col-1 ">The discount is {value} %</div>                
+                         <input className="h3" type="number" placeholder="Enter the discount %" value={value} onChange={onChangeHandler} />  
+                </div>
+
+                <div className="row">
+                    <div className="col-2">You have saved</div>
+                    <div className="col-1 text-right">INR {saved}</div>
+                </div>
+                <div className="row">
+                    <div className="col-2">
+                        <strong>Total Price </strong>
+                    </div>
+                    <div className="col-1 text-right">
+                        <strong>INR {discountTotal.toFixed(2)}</strong>
+                    </div>
+                </div>
                 <hr />
             </> 
             )}
