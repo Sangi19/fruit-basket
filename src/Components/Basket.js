@@ -11,9 +11,9 @@ export default function Basket (props) {
 
     const num= value/100;
     const num1=itemsPrice*num;
-    const discountTotal= itemsPrice-num1;
+    const discount= itemsPrice-num1;
  
-    const totalPrice=discountTotal
+    const totalPrice=discount
         
     const saved= itemsPrice-totalPrice;
 
@@ -72,7 +72,7 @@ export default function Basket (props) {
                         <strong>Total Price </strong>
                     </div>
                     <div className="col-1 text-right">
-                        <strong>INR {discountTotal.toFixed(2)}</strong>
+                        <strong>INR {discount.toFixed(2)}</strong>
                     </div>
                 </div>
                 <hr />
