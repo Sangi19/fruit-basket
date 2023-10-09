@@ -46,7 +46,9 @@ Added disable functionality in ADD button:
 
 ![React Fruit Basket  - disabled ADD button with discount price](https://github.com/Sangi19/fruit-basket/blob/master/Images/snip.PNG))
 
-
+## Live App in vercel
+- Click the link for [Live Fruit Shop app in Vercel](fruit-basket-three.vercel.app)
+  
 ## Built by
 
 👤 **Sangeetha Ramkumar**
