@@ -16,9 +16,8 @@
 - [About the Project](#about-the-project)
 - [Technical Components](#techincal-components)
 - [Built With](#built-with)
-- [Installation](#Installation)
-- [Contact](#Authors)
 - [How it works](#How-it-works)
+- [Contact](#Authors)
 
 
 ## About The Project
@@ -26,7 +25,7 @@ Fruit Basket is a JavaScript React project which has the functionality of "Onlin
     
 ## Technical Components
 
-React - Load the Tasks at real-time. Instead of refreshing the whole page, particular components/tasks will be altered.
+React - Load the data at real-time. Instead of refreshing the whole page, particular components/tasks will be altered.
 Visual Studio Code Editor - This code editor is redefined and optimized for building and debugging modern web and cloud applications.
 
 ## Built With
@@ -42,6 +41,11 @@ This project was built using these technologies.
 ## How It Works
  React Fruit Basket : <br>
 ![React Fruit Basket  - Base](https://github.com/Sangi19/fruit-basket/blob/master/Images/basic.PNG)
+
+Added disable functionality in ADD button:
+
+![React Fruit Basket  - disabled ADD button with discount price](https://github.com/Sangi19/fruit-basket/blob/master/Images/snip.PNG))
+
 
 ## Built by
 
